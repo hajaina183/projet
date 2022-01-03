@@ -65,7 +65,7 @@ public class ModeleController implements CommandLineRunner{
 		this.regions = regions;
 	}
 
-	@GetMapping("/indexBackOffice")
+	@GetMapping("/")
 	public String index(Model model) {
 		model.addAttribute("message","Hello World");
 		return "index";
