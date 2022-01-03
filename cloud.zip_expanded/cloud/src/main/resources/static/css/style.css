@@ -1,0 +1,259 @@
+body {
+    padding-top: 70px;
+    /* background-image: url(../images/ap.jpg);
+    background-attachment : fixed; */
+    background-color: #f8f8f8;
+}
+
+starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.glyphicon{
+    font-weight:bold;
+}
+.social{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.social a{
+    color: #777777;
+    font-size: 20px;
+}
+.social a[title="Facebook"]:hover,
+.social a[title="Facebook"]:focus,
+.social a[title="Facebook"]:active {
+    color: #3b5998;
+}
+.social a[title="Twitter"]:hover,
+.social a[title="Twitter"]:focus,
+.social a[title="Twitter"]:active {
+    color: #00aced;
+}
+.social a[title="Instagram"]:hover,
+.social a[title="Instagram"]:focus,
+.social a[title="Instagram"]:active {
+    color: #fb3958;
+}
+
+legend .badge,p .badge{
+    background-color: grey;
+}
+
+.cadeau{
+  margin-bottom: 15px;
+}
+
+.ajouter{
+    color: #008000;
+}
+.ajouter i{
+    color: #008000;
+}
+
+.ajouter:hover,.ajouter i:hover{
+    color: #00D400;
+}
+
+.annuler{
+    color: #BB0000;
+}
+
+.annuler:hover{
+    color: #ff0000;
+}
+
+.qte{
+    width: 60px;
+}
+
+.navbar-inverse .badge {
+    background-color: #fff;
+    color: #d40000;
+  }
+  
+  .btn {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .btn-default {
+    background-image: linear-gradient(#4f5151, #474949 6%, #3f4141);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4f5151', endColorstr='#ff3f4141', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #2e2f2f;
+  }
+  
+  .btn-default:hover {
+    background-image: linear-gradient(#4f5151, #575959 6%, #3f4141);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4f5151', endColorstr='#ff3f4141', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #2e2f2f;
+  }
+  
+  .btn-primary{
+    background-image: linear-gradient(#e72510, #D40000 6%, #cb210e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe72510', endColorstr='#ffcb210e', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #a91b0c;
+  }
+  
+  .btn-primary:hover {
+    background-image: linear-gradient(#e72510, #EE0000 6%, #cb210e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe72510', endColorstr='#ffcb210e', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #a91b0c;
+  }
+  
+  .btn-success{
+    background-image: linear-gradient(#4da309, #469408 6%, #3f8507);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4da309', endColorstr='#ff3f8507', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #2f6405;
+  }
+
+  .btn-success:hover {
+    background-image: linear-gradient(#4da309, #66CC48 6%, #3f8507);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4da309', endColorstr='#ff3f8507', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #2f6405;
+  }
+
+  .btn-info{
+    background-image: linear-gradient(#02a5de, #029acf 6%, #028fc0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff02a5de', endColorstr='#ff028fc0', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #02749c;
+  }
+
+  .btn-info:hover {
+    background-image: linear-gradient(#02a5de, #34d0ff 6%, #028fc0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff02a5de', endColorstr='#ff028fc0', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #02749c;
+  }
+  .btn-warning {
+    background-image: linear-gradient(#a54caa, #9b479f 6%, #914294);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa54caa', endColorstr='#ff914294', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #79377c;
+  }
+  .btn-warning:hover {
+    background-image: linear-gradient(#a54caa, #e96af0 6%, #914294);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa54caa', endColorstr='#ff914294', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #79377c;
+  }
+
+  .btn-danger {
+    background-image: linear-gradient(#e08b27, #d9831f 6%, #cc7b1d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe08b27', endColorstr='#ffcc7b1d', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #ac6819;
+  }
+  
+  .btn-danger:hover {
+    background-image: linear-gradient(#e08b27, #ffa136 6%, #cc7b1d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe08b27', endColorstr='#ffcc7b1d', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #ac6819;
+  }
+  body {
+    font-weight: 300;
+  }
+  
+  th {
+    color: #444444;
+  }
+  legend {
+    color: #444444;
+  }
+  label {
+    font-weight: normal;
+  }
+  .has-warning .help-block,
+  .has-warning .control-label,
+  .has-warning .radio,
+  .has-warning .checkbox,
+  .has-warning .radio-inline,
+  .has-warning .checkbox-inline,
+  .has-warning.radio label,
+  .has-warning.checkbox label,
+  .has-warning.radio-inline label,
+  .has-warning.checkbox-inline label,
+  .has-warning .form-control-feedback {
+    color: #d9831f;
+  }
+  .has-warning .form-control,
+  .has-warning .form-control:focus {
+    border-color: #d9831f;
+  }
+  .has-error .help-block,
+  .has-error .control-label,
+  .has-error .radio,
+  .has-error .checkbox,
+  .has-error .radio-inline,
+  .has-error .checkbox-inline,
+  .has-error.radio label,
+  .has-error.checkbox label,
+  .has-error.radio-inline label,
+  .has-error.checkbox-inline label,
+  .has-error .form-control-feedback {
+    color: #d40000;
+  }
+  .has-error .form-control,
+  .has-error .form-control:focus {
+    border-color: #d40000;
+  }
+  .has-success .help-block,
+  .has-success .control-label,
+  .has-success .radio,
+  .has-success .checkbox,
+  .has-success .radio-inline,
+  .has-success .checkbox-inline,
+  .has-success.radio label,
+  .has-success.checkbox label,
+  .has-success.radio-inline label,
+  .has-success.checkbox-inline label,
+  .has-success .form-control-feedback {
+    color: #469408;
+  }
+  .has-success .form-control,
+  .has-success .form-control:focus {
+    border-color: #469408;
+  }
+  .pager a {
+    color: #444444;
+  }
+  .pager a:hover,
+  .pager .active > a {
+    border-color: #d40000;
+    color: #fff;
+  }
+  .pager .disabled > a {
+    border-color: #dddddd;
+  }
+  
