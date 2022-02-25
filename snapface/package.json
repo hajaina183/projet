@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "heroku-postbuild": "ng build --prod",
+    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -20,23 +19,16 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "@types/leaflet": "^1.7.9",
-    "cli": "^1.0.1",
     "cors": "^2.8.5",
-    "express": "^4.17.3",
     "leaflet": "^1.7.1",
     "ol": "^6.12.0",
-    "path": "^0.12.7",
     "rxjs": "~7.5.0",
-    "serve": "^13.0.2",
     "tslib": "^2.3.0",
-    "typescript": "~4.5.2",
-    "zone.js": "~0.11.4",
-    "@angular/cli": "^13.2.5",
-    "@angular/compiler-cli": "~13.2.0"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.3",
-    "@angular/cli": "^13.2.5",
+    "@angular/cli": "~13.2.3",
     "@angular/compiler-cli": "~13.2.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
@@ -47,9 +39,5 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.5.2"
-  },
-  "engines": {
-    "node": "16.14.0",
-    "npm": "8.3.1"
   }
 }
