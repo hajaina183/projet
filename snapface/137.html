@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Elément Google Maps indiquant que la carte doit être affiché en plein écran et
+		qu'elle ne peut pas être redimensionnée par l'utilisateur, 
+		importation de la librairie Google Maps grâce aux balises -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<style type="text/css">
+			html { height: 100% }
+			body { height: 100%; margin: 0; padding: 0 }
+				  #carteId{ height: 100% }
+		</style>
+		<!-- Inclusion de l'API Google MAPS -->
+		<!-- Le paramètre "sensor" indique si cette application utilise détecteur pour déterminer la position de l'utilisateur -->
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?sensor=false">
+		</script>
+		<script type="text/javascript">
+			function initialize() {
+				//objet contenant des propriétés avec des identificateurs prédéfinis dans Google Maps permettant
+				//de définir des options d'affichage de notre carte
+				var mapOptions = {
+					// centre de la carte, valeur : coordonnées en latitude et longitude
+					center: new google.maps.LatLng(-18.91804102616525, 47.52190840864179),
+					// agrandissement de la carte
+					zoom: 15
+				};
+				//constructeur de la carte qui prend en paramêtre le conteneur HTML
+				//dans lequel la carte doit s'afficher et les options
+				var carte = new google.maps.Map(document.getElementById("carteId"),
+				mapOptions);
+				// spécifier une position (en latitude et longitude) avec le constructeur google.maps.LatLng() 
+				var marker = [
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.997972995365668, 47.53585857772825),
+						draggable: true,
+						title: "Fiadanamanga",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.99198259730485, 47.53274721527097),
+						draggable: true,
+						title: "Mandrimena",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.988152890328738, 47.532189315795875),
+						draggable: true,
+						title: "Galana",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.984297732093573, 47.53279013061521),
+						draggable: true,
+						title: "Boulangerie",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.979965645178076, 47.53313881778715),
+						draggable: true,
+						title: "Pharmacie Andoharanofotsy",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.977124871287273, 47.53299397850034),
+						draggable: true,
+						title: "Arret tsena",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.97106777380362, 47.53002209091184),
+						draggable: true,
+						title: "Malaza",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.970337254708156, 47.52959830188749),
+						draggable: true,
+						title: "Sampanan'i Tongarivo",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.967744900689972, 47.53038150691984),
+						draggable: true,
+						title: "Ambany Atsimo",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.963559508241943, 47.52964658164976),
+						draggable: true,
+						title: "Magasin M",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.96067279453541, 47.529678768157936),
+						draggable: true,
+						title: "Ankady",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.95784183871628, 47.52951247119901),
+						draggable: true,
+						title: "Tanjombato",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.95502098190128, 47.52962512397764),
+						draggable: true,
+						title: "35",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.9522914023811, 47.5276188316345),
+						draggable: true,
+						title: "Barrage",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.948496299404287, 47.52577883625028),
+						draggable: true,
+						title: "Fasika",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.944005992574937, 47.52437335872648),
+						draggable: true,
+						title: "Ankadimbahoaka",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.940175183359585, 47.52217662954328),
+						draggable: true,
+						title: "Gare",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.93519246291392, 47.52189767980573),
+						draggable: true,
+						title: "Discours",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.932259590540667, 47.52069605016706),
+						draggable: true,
+						title: "Paraky",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.92814942323214, 47.51897943639753),
+						draggable: true,
+						title: "Jirama",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.922811129075182, 47.52067459249494),
+						draggable: true,
+						title: "Mon gouter",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.920273857239717, 47.52153289937971),
+						draggable: true,
+						title: "Mahamasina",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.91804102616525, 47.52190840864179),
+						draggable: true,
+						title: "Anosy",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.909667644053254, 47.52720845365522),
+						draggable: true,
+						title: "Andohan'Analakely",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.906845973578942, 47.526618367671944),
+						draggable: true,
+						title: "Tavoangy",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.90583097255965, 47.526044374942767),
+						draggable: true,
+						title: "Toto-baton'Ambondrona",		
+						map: carte
+					}),
+					new google.maps.Marker({
+						position: new google.maps.LatLng(-18.904742377122254, 47.52426607036588),
+						draggable: true,
+						title: "Analakely",		
+						map: carte
+					}),
+				];
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+	<body>
+		<div id="carteId"/>
+	</body>
+</html>
