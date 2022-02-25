@@ -1,3 +1,0 @@
->use adminDB;
->create collection users;
->db.users.insert({username:"admin",password:hex_md5("admin")});
