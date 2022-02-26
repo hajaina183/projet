@@ -1,3 +1,4 @@
+
 function requireHTTPS(req, res, next) {
     // The 'x-forwarded-proto' check is for Heroku
     if (!req.secure && req.get('x-forwarded-proto') !== 'https') {
@@ -8,12 +9,12 @@ function requireHTTPS(req, res, next) {
 const express = require('express');
 const app = express();
 app.use(requireHTTPS);
-
 app.use(express.static('./dist/snapface'));
-
 app.get('/*', function(req, res) {
     res.sendFile('index.html', {root: 'dist/snapface/'}
   );
 });
-
-app.listen(process.env.PORT || 8080);
+const NODE_PORT = process.env.PORT||5000;
+app.listen(NODE_PORT , function() {
+    console.log("node app is running at localhost : "+NODE_PORT);
+});
