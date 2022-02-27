@@ -35,6 +35,7 @@ export class ListeComponent implements OnInit {
       this.router.navigate(['../']);
     }
     var url = this.apiURL+this.idRegion+"/"+this.token;
+    console.log("url dep : "+url);
     this.http.get<Signalement[]>(url).subscribe(signl => {
       this.signalements = signl;
       console.warn(this.signalements);
