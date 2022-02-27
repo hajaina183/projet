@@ -1,3 +1,29 @@
+<app-navbar></app-navbar>
+<div class="center">
+    <form>
+        <div class="inputbox">
+          <input type="text" name="status" [(ngModel)]="status" required="required">
+          <span>Status</span>
+        </div>
+        <div class="inputbox">
+          <input type="text" name="type" [(ngModel)]="type" required="required">
+          <span>Type</span>
+        </div>
+        <div class="inputbox">
+          <input type="date" name="dateMin" [(ngModel)]="dateMin">
+          <span>Date min</span>
+        </div>
+        <div class="inputbox">
+          <input type="date" name="dateMax" [(ngModel)]="dateMax">
+          <span>Date max</span>
+        </div>
+        <div class="inputbox">
+          <input type="button" value="Recherche" (click)="recherche()">
+        </div>
+    </form>
+</div>
+
+
 <div class="map-wrapper">
     <div class="map-border">
         <div id="map">

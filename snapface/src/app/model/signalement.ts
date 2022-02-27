@@ -8,5 +8,6 @@ export class Signalement{
     image! : string;
     longitude! : number;
     latitude! : number;
+    description! : string;
     date!: Date;
 }

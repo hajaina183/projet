@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DetailsComponent } from './details/details.component';
 import { StatusComponent} from './status/status.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   //{ path:"liste", loadChildren: () => import('./liste/liste.module').then(m => m.ListeModule) },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: "signalement", component: SignalementComponent},
   { path: "navbar", component: NavbarComponent},
   { path: "details", component: DetailsComponent},
-  { path: "status", component: StatusComponent}
+  { path: "status", component: StatusComponent},
+  { path: "map", component: MapComponent}
 ];
 
 @NgModule({

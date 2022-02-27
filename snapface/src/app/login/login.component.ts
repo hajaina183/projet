@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
       console.warn(this.reponseLogFront);
       if(this.reponseLogFront.reponse != 0) {
         console.log(this.router)
-        this.router.navigate(['../liste']);
+        this.router.navigate(['../map']);
         localStorage.setItem('token', this.reponseLogFront.token);
         localStorage.setItem('idRegion', this.reponseLogFront.reponse.toString());
       } else {
