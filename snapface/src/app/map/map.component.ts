@@ -111,6 +111,7 @@ export class MapComponent implements AfterViewInit {
         });
 
         marker.on('click',(e:L.LeafletMouseEvent)=>{
+          console.log(signalem.image);
           var img = "data:image/png;base64,"+signalem.image;
           localStorage.setItem('idSignalement', signalem.id.toString());
           marker.bindPopup("<h2>"+signalem.titre+"</h2><img src="+img+" style='width:50%'></br><p>"+signalem.description+"</p></br><a href='../details'>Voir plus</a>");
