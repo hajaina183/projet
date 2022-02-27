@@ -17,6 +17,7 @@ export class NavbarComponent implements OnInit {
   }
 
   allerVersElement(element: string): void {
+    console.log(element);
     if(element == 'deconnexion') {
       this.token = localStorage.getItem('token');
       var url = this.path+"supprimerToken/"+this.token;
@@ -25,10 +26,10 @@ export class NavbarComponent implements OnInit {
       });
       localStorage.clear();
       this.router.navigate(['../']);
-    } else if(element == 'liste') {
-      this.router.navigate(['../liste']);
     } else if(element == 'map') {
       this.router.navigate(['../map']);
+    } else{
+      this.router.navigate(['../liste']);
     }
   }
 
