@@ -25,8 +25,10 @@ export class NavbarComponent implements OnInit {
       });
       localStorage.clear();
       this.router.navigate(['../']);
-    } else {
+    } else if(element == 'liste') {
       this.router.navigate(['../liste']);
+    } else if(element == 'map') {
+      this.router.navigate(['../map']);
     }
   }
 
