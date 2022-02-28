@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
       this.router.navigate(['../']);
     } else if(element == 'map') {
       this.router.navigate(['../map']);
-    } else{
+    } else if(element == 'home')
       this.router.navigate(['../liste']);
     }
   }
